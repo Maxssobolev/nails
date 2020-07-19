@@ -14,8 +14,13 @@
 
 
 body{
-	background: linear-gradient(180deg, rgba(0, 0, 0, 0.15) 0%, rgba(255, 255, 255, 0) 70.83%) no-repeat,url('../img/Headerback.jpg') center top;
+
+	background: linear-gradient(180deg, rgba(0, 0, 0, 0.15) 0%, rgba(255, 255, 255, 0) 70.83%) repeat-x,url('../img/Headerback.jpg') center top;
 	font-family: "Roboto Condensed";
+	@media (max-width: 376px){
+		background: linear-gradient(180deg, rgba(0, 0, 0, 0.15) 0%, rgba(255, 255, 255, 0) 70.83%) repeat-x,url('../img/headerback_mobile.jpg') no-repeat center top;
+		background-size: cover;
+	}
 }
 
 .header{
@@ -37,8 +42,14 @@ body{
 }
 
 .header-central-block__logo{
-	margin: 60px 0;
+	margin: 60px;
+	text-align: center;
 	pointer-events: none;
+	
+		img {
+			max-width: 100%;
+		}
+	
 }
 
 
@@ -71,7 +82,11 @@ body{
 		left:-32px;
 		transform: scale(-1,1);
 	}
+	
 
+	@media (max-width: 500px) {
+		transform: scale(.8);
+	}
 }
 
 
@@ -86,10 +101,22 @@ body{
 	display: flex;
 	justify-content: center;
 	align-items: center;
+
 	img{
 		margin-bottom: 6px;
 	}
-	&  .item {display: flex; flex-direction: column; align-items: center; justify-content: center;}
+
+	&  .item {
+		display: flex; 
+		flex-direction: column; 
+		align-items: center; 
+		justify-content: center;
+		a {
+			color:black;
+			text-align: center;
+		}
+	}
+
 	&  .item:first-child {margin-right: 44px;}
 	&  .item:last-child {margin-left: 44px;}
 
@@ -98,7 +125,7 @@ body{
 
 @keyframes pulse {
   0% {
-    -moz-box-shadow: 0 0 0 0 rgba(64,94,68, 0.4);
+    -moz-box-shadow: 0 0 0 0 rgba(64,94,68, 0.3);
     box-shadow: 0 0 0 0 rgba(64,94,68, 0.3);
   }
   70% {
@@ -115,4 +142,15 @@ body{
 [main]{
 	background-color: white;
 	height: 100vh;
+}
+
+
+* {
+/* Делает падинги отступами внутрь родительского элемента */
+box-sizing: border-box;
+}
+
+Ну и чтоб наверняка
+img {
+max-width: 100%;
 }

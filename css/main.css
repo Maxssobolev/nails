@@ -74,11 +74,18 @@ html {
   /* Firefox */ }
 
 body {
-  background: -webkit-gradient(linear, left top, left bottom, from(rgba(0, 0, 0, 0.15)), color-stop(70.83%, rgba(255, 255, 255, 0))) no-repeat, url("../img/Headerback.jpg") center top;
-  background: -webkit-linear-gradient(top, rgba(0, 0, 0, 0.15) 0%, rgba(255, 255, 255, 0) 70.83%) no-repeat, url("../img/Headerback.jpg") center top;
-  background: -o-linear-gradient(top, rgba(0, 0, 0, 0.15) 0%, rgba(255, 255, 255, 0) 70.83%) no-repeat, url("../img/Headerback.jpg") center top;
-  background: linear-gradient(180deg, rgba(0, 0, 0, 0.15) 0%, rgba(255, 255, 255, 0) 70.83%) no-repeat, url("../img/Headerback.jpg") center top;
+  background: -webkit-gradient(linear, left top, left bottom, from(rgba(0, 0, 0, 0.15)), color-stop(70.83%, rgba(255, 255, 255, 0))) repeat-x, url("../img/Headerback.jpg") center top;
+  background: -webkit-linear-gradient(top, rgba(0, 0, 0, 0.15) 0%, rgba(255, 255, 255, 0) 70.83%) repeat-x, url("../img/Headerback.jpg") center top;
+  background: -o-linear-gradient(top, rgba(0, 0, 0, 0.15) 0%, rgba(255, 255, 255, 0) 70.83%) repeat-x, url("../img/Headerback.jpg") center top;
+  background: linear-gradient(180deg, rgba(0, 0, 0, 0.15) 0%, rgba(255, 255, 255, 0) 70.83%) repeat-x, url("../img/Headerback.jpg") center top;
   font-family: "Roboto Condensed"; }
+  @media (max-width: 376px) {
+    body {
+      background: -webkit-gradient(linear, left top, left bottom, from(rgba(0, 0, 0, 0.15)), color-stop(70.83%, rgba(255, 255, 255, 0))) repeat-x, url("../img/headerback_mobile.jpg") no-repeat center top;
+      background: -webkit-linear-gradient(top, rgba(0, 0, 0, 0.15) 0%, rgba(255, 255, 255, 0) 70.83%) repeat-x, url("../img/headerback_mobile.jpg") no-repeat center top;
+      background: -o-linear-gradient(top, rgba(0, 0, 0, 0.15) 0%, rgba(255, 255, 255, 0) 70.83%) repeat-x, url("../img/headerback_mobile.jpg") no-repeat center top;
+      background: linear-gradient(180deg, rgba(0, 0, 0, 0.15) 0%, rgba(255, 255, 255, 0) 70.83%) repeat-x, url("../img/headerback_mobile.jpg") no-repeat center top;
+      background-size: cover; } }
 
 .header {
   display: -webkit-box;
@@ -109,8 +116,11 @@ body {
       padding-bottom: 32px; } }
 
 .header-central-block__logo {
-  margin: 60px 0;
+  margin: 60px;
+  text-align: center;
   pointer-events: none; }
+  .header-central-block__logo img {
+    max-width: 100%; }
 
 .header-central-block__button {
   height: 72px;
@@ -138,6 +148,11 @@ body {
     -webkit-transform: scale(-1, 1);
     -ms-transform: scale(-1, 1);
     transform: scale(-1, 1); }
+  @media (max-width: 500px) {
+    .header-central-block__button {
+      -webkit-transform: scale(0.8);
+      -ms-transform: scale(0.8);
+      transform: scale(0.8); } }
 
 .quick-call {
   font-family: Monitorica;
@@ -172,6 +187,9 @@ body {
     -webkit-box-pack: center;
     -ms-flex-pack: center;
     justify-content: center; }
+    .quick-call .item a {
+      color: black;
+      text-align: center; }
   .quick-call .item:first-child {
     margin-right: 44px; }
   .quick-call .item:last-child {
@@ -179,7 +197,7 @@ body {
 
 @-webkit-keyframes pulse {
   0% {
-    -moz-box-shadow: 0 0 0 0 rgba(64, 94, 68, 0.4);
+    -moz-box-shadow: 0 0 0 0 rgba(64, 94, 68, 0.3);
     -webkit-box-shadow: 0 0 0 0 rgba(64, 94, 68, 0.3);
     box-shadow: 0 0 0 0 rgba(64, 94, 68, 0.3); }
   70% {
@@ -193,7 +211,7 @@ body {
 
 @keyframes pulse {
   0% {
-    -moz-box-shadow: 0 0 0 0 rgba(64, 94, 68, 0.4);
+    -moz-box-shadow: 0 0 0 0 rgba(64, 94, 68, 0.3);
     -webkit-box-shadow: 0 0 0 0 rgba(64, 94, 68, 0.3);
     box-shadow: 0 0 0 0 rgba(64, 94, 68, 0.3); }
   70% {
@@ -208,3 +226,12 @@ body {
 [main] {
   background-color: white;
   height: 100vh; }
+
+* {
+  /* Делает падинги отступами внутрь родительского элемента */
+  -webkit-box-sizing: border-box;
+  box-sizing: border-box; }
+
+Ну и чтоб наверняка
+img {
+  max-width: 100%; }
