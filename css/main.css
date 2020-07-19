@@ -248,10 +248,17 @@ body {
       [main] .menu ul .line-break {
         display: none; }
       @media (max-width: 750px) {
-        [main] .menu ul .line-break {
+        [main] .menu ul li:nth-child(5) {
           display: inline-block;
           height: 20px;
           width: 100%; } }
+      @media (max-width: 425px) {
+        [main] .menu ul li:nth-child(3) {
+          display: inline-block;
+          height: 20px;
+          width: 100%; }
+        [main] .menu ul li:nth-child(1) {
+          margin-right: -80px; } }
       [main] .menu ul a {
         color: inherit;
         display: inline-block;
