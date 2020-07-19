@@ -116,11 +116,14 @@ body {
       padding-bottom: 32px; } }
 
 .header-central-block__logo {
-  margin: 60px;
+  margin: 60px 0;
   text-align: center;
   pointer-events: none; }
   .header-central-block__logo img {
     max-width: 100%; }
+    @media (max-width: 500px) {
+      .header-central-block__logo img {
+        max-width: 80%; } }
 
 .header-central-block__button {
   height: 72px;
@@ -194,12 +197,17 @@ body {
     margin-right: 44px; }
   .quick-call .item:last-child {
     margin-left: 44px; }
+  @media (max-width: 500px) {
+    .quick-call .item:first-child {
+      margin-right: 25px; }
+    .quick-call .item:last-child {
+      margin-left: 25px; } }
 
 @-webkit-keyframes pulse {
   0% {
-    -moz-box-shadow: 0 0 0 0 rgba(64, 94, 68, 0.3);
-    -webkit-box-shadow: 0 0 0 0 rgba(64, 94, 68, 0.3);
-    box-shadow: 0 0 0 0 rgba(64, 94, 68, 0.3); }
+    -moz-box-shadow: 0 0 0 0 rgba(64, 94, 68, 0.5);
+    -webkit-box-shadow: 0 0 0 0 rgba(64, 94, 68, 0.5);
+    box-shadow: 0 0 0 0 rgba(64, 94, 68, 0.5); }
   70% {
     -moz-box-shadow: 0 0 0 10px rgba(0, 0, 0, 0);
     -webkit-box-shadow: 0 0 0 15px rgba(0, 0, 0, 0);
@@ -211,9 +219,9 @@ body {
 
 @keyframes pulse {
   0% {
-    -moz-box-shadow: 0 0 0 0 rgba(64, 94, 68, 0.3);
-    -webkit-box-shadow: 0 0 0 0 rgba(64, 94, 68, 0.3);
-    box-shadow: 0 0 0 0 rgba(64, 94, 68, 0.3); }
+    -moz-box-shadow: 0 0 0 0 rgba(64, 94, 68, 0.5);
+    -webkit-box-shadow: 0 0 0 0 rgba(64, 94, 68, 0.5);
+    box-shadow: 0 0 0 0 rgba(64, 94, 68, 0.5); }
   70% {
     -moz-box-shadow: 0 0 0 10px rgba(0, 0, 0, 0);
     -webkit-box-shadow: 0 0 0 15px rgba(0, 0, 0, 0);
@@ -226,12 +234,3 @@ body {
 [main] {
   background-color: white;
   height: 100vh; }
-
-* {
-  /* Делает падинги отступами внутрь родительского элемента */
-  -webkit-box-sizing: border-box;
-  box-sizing: border-box; }
-
-Ну и чтоб наверняка
-img {
-  max-width: 100%; }
