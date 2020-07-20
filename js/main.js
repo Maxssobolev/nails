@@ -15,4 +15,17 @@ $("button[aria-controls=slick-slide00]").text("МАНИКЮР");
 $("button[aria-controls=slick-slide01]").text("ПЕДИКЮР");
 $("button[aria-controls=slick-slide02]").text("БРОВИ | РЕСНИЦЫ");
 $("button[aria-controls=slick-slide03]").text("ПЕРМАНЕНТНЫЙ МАКИЯЖ");
+
+$(window).resize(
+	function(){
+		if($(window).width() <= 900){
+			$(".headers h2:nth-child(2)").fadeOut();
+			
+		} 
+		else {
+			$(".headers h2:nth-child(2)").fadeIn();
+			
+		}
+	});
+
 });
