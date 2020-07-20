@@ -11,7 +11,7 @@ $(document).ready(function() {
 	});
 
 
-$("button[aria-controls=slick-slide00]").text("МАНИКЮР");
+$("button[aria-controls=slick-slide00]").focus().text("МАНИКЮР");
 $("button[aria-controls=slick-slide01]").text("ПЕДИКЮР");
 $("button[aria-controls=slick-slide02]").text("БРОВИ | РЕСНИЦЫ");
 $("button[aria-controls=slick-slide03]").text("ПЕРМАНЕНТНЫЙ МАКИЯЖ");
@@ -31,5 +31,25 @@ $(window).resize(
 			
 		}
 	});
+
+
+
+
+
+ 
+$(window).scroll(function(){
+	if ($(this).scrollTop() > 600) {
+	$('.scrollup').fadeIn();
+	} else {
+	$('.scrollup').fadeOut();
+	}
+});
+ 
+$('.scrollup').click(function(){
+$("html, body").animate({ scrollTop: 400 }, 600);
+return false;
+});
+
+
 
 });
