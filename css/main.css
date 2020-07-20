@@ -207,7 +207,10 @@ body {
       background-size: cover; } }
   @media (max-width: 1079px) {
     body {
-      font-size: 20px; } }
+      font-size: 22px; } }
+  @media (max-width: 465px) {
+    body {
+      font-size: 18px; } }
 
 .header {
   display: -webkit-box;
@@ -462,6 +465,11 @@ body {
               [main] .current-item .category .price__details .col-costs:after {
                 width: 10px;
                 height: 15px;
+                background-size: cover; } }
+            @media (max-width: 465px) {
+              [main] .current-item .category .price__details .col-costs:after {
+                width: 8px;
+                height: 13px;
                 background-size: cover; } }
       [main] .current-item .category .work-examples {
         width: 40%;
