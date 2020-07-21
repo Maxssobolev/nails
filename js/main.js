@@ -7,7 +7,18 @@ $(document).ready(function() {
 		draggable: false, //no-swipe
 		waitForAnimate:false,
 		fade: true,
-  		cssEase: 'ease-in'
+  		cssEase: 'ease-in',
+  		adaptiveHeight: true
+	});
+
+	$('.work-examples').slick({
+		arrows: true,
+		dots:false,
+		autoplay: true,
+		infinite: true, //небесконечный слайдер
+		cssEase: 'ease',
+		waitForAnimate:false,
+		
 	});
 
 
