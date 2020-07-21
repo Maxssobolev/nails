@@ -34,9 +34,12 @@ $("button[aria-controls=slick-slide03]").text("ПЕРМАНЕНТНЫЙ МАКИ
 if($(window).width() <= 900){
 	$(".headers h2:nth-child(2)").fadeOut();
 } 
-
+$("#map iframe").height($('#map').height());
+$("#map iframe").width($('#map').width());
 $(window).resize(
 	function(){
+		$("#map iframe").height($('#map').height());
+		$("#map iframe").width($('#map').width());
 		if($(window).width() <= 900){
 			$(".headers h2:nth-child(2)").fadeOut();
 			
