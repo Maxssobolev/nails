@@ -613,7 +613,10 @@ footer {
     footer .contacts .social {
       display: -webkit-box;
       display: -ms-flexbox;
-      display: flex; }
+      display: flex;
+      -webkit-box-align: center;
+      -ms-flex-align: center;
+      align-items: center; }
       footer .contacts .social img {
         margin: 0 5px; }
     @media (max-width: 559px) {
@@ -645,3 +648,9 @@ footer {
 
 .slick-slide img {
   height: 100%; }
+
+a {
+  color: inherit;
+  padding: 0;
+  margin: 0;
+  display: block; }
