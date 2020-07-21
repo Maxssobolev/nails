@@ -561,8 +561,74 @@ body {
     transform: scale(-1, 1); }
 
 footer {
-  height: 100vh;
+  padding-top: 100px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+  -ms-flex-pack: center;
+  justify-content: center;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+  -ms-flex-direction: column;
+  flex-direction: column;
   background: rgba(255, 255, 255, 0.94); }
+  footer #map {
+    width: 80%;
+    height: 250px;
+    -webkit-box-shadow: inset 0px 4px 4px rgba(0, 0, 0, 0.25);
+    box-shadow: inset 0px 4px 4px rgba(0, 0, 0, 0.25);
+    overflow: hidden; }
+  footer .contacts {
+    padding-top: 27px;
+    width: 80%;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: justify;
+    -ms-flex-pack: justify;
+    justify-content: space-between; }
+    footer .contacts .adress {
+      display: -webkit-box;
+      display: -ms-flexbox;
+      display: flex;
+      -webkit-box-align: center;
+      -ms-flex-align: center;
+      align-items: center;
+      width: 50%;
+      font-size: 16px;
+      font-weight: 300; }
+      footer .contacts .adress img {
+        margin-right: 16px; }
+    footer .contacts .social {
+      display: -webkit-box;
+      display: -ms-flexbox;
+      display: flex; }
+      footer .contacts .social img {
+        margin: 0 5px; }
+    @media (max-width: 559px) {
+      footer .contacts {
+        -ms-flex-wrap: wrap;
+        flex-wrap: wrap; }
+        footer .contacts .line-break {
+          width: 100%; }
+        footer .contacts .adress {
+          -webkit-box-flex: 1;
+          -ms-flex-positive: 1;
+          flex-grow: 1; }
+        footer .contacts .social {
+          -webkit-box-flex: 1;
+          -ms-flex-positive: 1;
+          flex-grow: 1;
+          -webkit-box-pack: center;
+          -ms-flex-pack: center;
+          justify-content: center;
+          padding-top: 20px; }
+          footer .contacts .social img {
+            margin: 0 15px; } }
 
 .slick-slide {
   height: 100%; }
