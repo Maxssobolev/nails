@@ -8,17 +8,19 @@ $(document).ready(function() {
 		waitForAnimate:false,
 		fade: true,
   		cssEase: 'ease-in',
-  		adaptiveHeight: true,
+  		slidesToShow: 1,
+  		
   		swipe: false,
 		swipeToSlide: false,
 		touchMove: false,
 		draggable: false,
+		adaptiveHeight: true
 	});
 
-	$('.work-examples').slick({
+	$('.carousel').slick({
 		arrows: true,
 		dots:false,
-		autoplay: true,
+		//autoplay: true,
 		infinite: true, //небесконечный слайдер
 		cssEase: 'ease',
 		waitForAnimate:false,
@@ -36,10 +38,21 @@ if($(window).width() <= 900){
 } 
 $("#map iframe").height($('#map').height());
 $("#map iframe").width($('#map').width());
+
+
+/*
+$(".menu button").click(function(){
+	$(".price").height($('.slick-list').height());
+});
+*/
+
 $(window).resize(
 	function(){
 		$("#map iframe").height($('#map').height());
 		$("#map iframe").width($('#map').width());
+
+		
+
 		if($(window).width() <= 900){
 			$(".headers h2:nth-child(2)").fadeOut();
 			
