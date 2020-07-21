@@ -311,6 +311,9 @@ body {
   -webkit-box-align: center;
   -ms-flex-align: center;
   align-items: center; }
+  @media (min-width: 900px) {
+    .quick-call {
+      background: white; } }
   .quick-call img {
     margin-bottom: 6px; }
   .quick-call .item {
@@ -374,6 +377,9 @@ body {
     [main] {
       padding-top: 2px;
       margin-top: -1px; } }
+  @media (min-width: 900px) {
+    [main] {
+      background: white; } }
   [main] .menu ul {
     display: -webkit-box;
     display: -ms-flexbox;
@@ -629,6 +635,9 @@ footer {
           padding-top: 20px; }
           footer .contacts .social img {
             margin: 0 15px; } }
+  @media (min-width: 900px) {
+    footer {
+      background: white; } }
 
 .slick-slide {
   height: 100%; }
