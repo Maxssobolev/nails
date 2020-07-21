@@ -28,7 +28,7 @@ $(document).ready(function() {
 	});
 
 
-$("button[aria-controls=slick-slide00]").focus().text("МАНИКЮР");
+$("button[aria-controls=slick-slide00]").text("МАНИКЮР");
 $("button[aria-controls=slick-slide01]").text("ПЕДИКЮР");
 $("button[aria-controls=slick-slide02]").text("БРОВИ | РЕСНИЦЫ");
 $("button[aria-controls=slick-slide03]").text("ПЕРМАНЕНТНЫЙ МАКИЯЖ");
