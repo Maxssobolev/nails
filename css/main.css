@@ -584,14 +584,14 @@ footer {
   flex-direction: column;
   background: rgba(255, 255, 255, 0.94); }
   footer #map {
-    width: 80%;
+    width: 90%;
     height: 250px;
     -webkit-box-shadow: inset 0px 4px 4px rgba(0, 0, 0, 0.25);
     box-shadow: inset 0px 4px 4px rgba(0, 0, 0, 0.25);
     overflow: hidden; }
   footer .contacts {
     padding-top: 27px;
-    width: 80%;
+    width: 90%;
     display: -webkit-box;
     display: -ms-flexbox;
     display: flex;
