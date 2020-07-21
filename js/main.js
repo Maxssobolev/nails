@@ -8,7 +8,11 @@ $(document).ready(function() {
 		waitForAnimate:false,
 		fade: true,
   		cssEase: 'ease-in',
-  		adaptiveHeight: true
+  		adaptiveHeight: true,
+  		swipe: false,
+		swipeToSlide: false,
+		touchMove: false,
+		draggable: false,
 	});
 
 	$('.work-examples').slick({
